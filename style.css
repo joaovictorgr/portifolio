@@ -1,0 +1,221 @@
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    /*bordas laterais*/
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(25, 100, 150);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgb(25, 100, 150);
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px rgb(25, 100, 150);
+    transform: scale(1.05);
+}
+
+/*ESTILO DO CABEÇALHO*/
+header{
+    /*bordas cima e baixo*/
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display:inline-block;
+}
+
+header a:hover{
+    color:white;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .texto-topo-site h1{
+    color: white;
+    font-size: 38px;
+}
+
+.topo-do-site .texto-topo-site h1 span{
+    color:rgb(25, 100, 150)
+}
+
+.topo-do-site .texto-topo-site p{
+    color: white;
+    margin: 30px 0;
+}
+
+.topo-do-site .imagem-topo-site img{
+    position: relative;
+    animation: flutuante 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuante{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px
+    }
+}
+
+/*ESTILO DAS HABILIDADES*/
+section.habilidades{
+    padding: 40px 4%;
+}
+
+section.habilidades .flex{
+    gap: 60px;
+}
+
+.habilidades .habilidades-box{
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.habilidades .habilidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #5c5c5c;
+}
+
+.habilidades .habilidades-box i{
+    font-size: 60px;
+    color:rgb(25, 100, 150);
+}
+
+.habilidades .habilidades-box h3{
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+/*ESTILO DA FORMAÇAO*/
+section.formacao{
+    padding: 80px 4%;
+}
+
+section.formacao .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.formacao .txt-formacao{
+    color: white;
+}
+
+.formacao .txt-formacao h2{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.formacao .txt-formacao h2 span{
+    color: rgb(25, 100, 150);
+}
+
+.formacao .txt-formacao p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(25, 100, 150);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+/*ESTILO DAS CERTIFICAÇOES*/
+section.certificacoes{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.089);
+}
+
+.certificacoes .flex p{
+    color: white;
+    padding: 40px;
+    
+}
+
+/*ESTILO DO RODAPÉ*/
+footer{
+    padding: 60px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer p i{
+    color: rgb(25, 100, 150);
+    font-size: 20px;
+}
+
+footer .line-footer p a{
+    color: white;
+}
